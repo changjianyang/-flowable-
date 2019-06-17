@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: dtoa-flowable-test
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        prefix: ${spring.application.name}
+        server-addr: 132.232.106.193:8848
+        active-profiles: dev
+        refreshable-dataids: ${spring.application.name}-${spring.cloud.nacos.config.active-profiles}.${spring.cloud.nacos.config.file-extension}
+      discovery:
+        server-addr: ${spring.cloud.nacos.config.server-addr}
+    sentinel:
+      transport:
+        dashboard: 132.232.106.193:8080
+  profiles:
+    active: dev
