@@ -6,7 +6,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @author yangchangjian
- * @version 1.0
+ * @version 1.0.0
  * @Description:
  * @datetime 2019/6/17 10:13
  */
